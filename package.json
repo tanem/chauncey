@@ -1,6 +1,6 @@
 {
   "name": "chauncey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shorten URLs with bitly.",
   "main": "./lib/chauncey.js",
   "bin": {
