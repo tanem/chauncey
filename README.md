@@ -41,11 +41,17 @@ export BITLY_ACCESS_TOKEN=[access token]
 
 ## Usage
 
-Chauncey will output the shortened URL to `stdout`. Assuming we have a correctly configured `.chaunceyrc` file:
+Chauncey will output the shortened URL to `stdout`:
 
 ```
 $ chauncey http://google.com/
 http://bit.ly/1jib0Hi
+```
+
+So on OS X, you can do stuff like:
+
+```
+$ chauncey http://google.com/ | pbcopy
 ```
 
 ## Note
