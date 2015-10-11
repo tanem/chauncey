@@ -1,0 +1,41 @@
+{
+  "name": "chauncey",
+  "version": "1.0.0",
+  "description": "Shorten URLs with bitly.",
+  "main": "./lib/chauncey.js",
+  "bin": {
+    "chauncey": "./bin/cmd.js"
+  },
+  "preferGlobal": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Move on, nothing to see here!\" && exit 1"
+  },
+  "keywords": [
+    "shorten",
+    "url",
+    "bitly",
+    "pufferfish",
+    "puffer",
+    "chauncey",
+    "mcpufferson"
+  ],
+  "author": "Tane Morgan <tane.morgan@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanem/chauncey.git"
+  },
+  "homepage": "https://github.com/tanem/chauncey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanem/chauncey/issues"
+  },
+  "dependencies": {
+    "concat-stream": "^1.5.0",
+    "find-nearest-file": "^1.0.0",
+    "habitat": "^3.1.2",
+    "minimist": "^1.2.0"
+  }
+}
