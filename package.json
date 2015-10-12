@@ -2,16 +2,16 @@
   "name": "chauncey",
   "version": "1.0.1",
   "description": "Shorten URLs with bitly.",
-  "main": "./lib/chauncey.js",
+  "main": "./dist/index.js",
   "bin": {
-    "chauncey": "./bin/cmd.js"
+    "chauncey": "./dist/bin/cmd.js"
   },
   "preferGlobal": true,
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "test": "echo \"Move on, nothing to see here!\" && exit 1"
+    "test": "echo \"Move on, nothing to see here!\" && exit 1",
+    "lint": "eslint src/**/*.es6",
+    "clean": "rm -rf dist",
+    "prepublish": "npm run lint && npm run clean && babel --optional runtime src -d dist && cp src/bin/usage.txt dist/bin"
   },
   "keywords": [
     "shorten",
@@ -37,5 +37,11 @@
     "find-nearest-file": "^1.0.0",
     "habitat": "^3.1.2",
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-runtime": "^5.8.25",
+    "eslint": "^1.6.0"
   }
 }
