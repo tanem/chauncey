@@ -1,6 +1,6 @@
 import https from 'https';
-import { concat } from 'concat-stream';
-import { findNearest } from 'find-nearest-file';
+import concat from 'concat-stream';
+import findNearest from 'find-nearest-file';
 import habitat from 'habitat';
 
 export default ({ url, token, done = () => {} }) => {
