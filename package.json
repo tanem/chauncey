@@ -11,7 +11,7 @@
     "test": "echo \"Move on, nothing to see here!\" && exit 1",
     "lint": "eslint src/**/*.es6",
     "clean": "rm -rf dist",
-    "prepublish": "npm run lint && npm run clean && babel --optional runtime src -d dist && cp src/bin/usage.txt dist/bin"
+    "prepublish": "npm install && npm run lint && npm run clean && babel --optional runtime src -d dist && cp src/bin/usage.txt dist/bin"
   },
   "keywords": [
     "shorten",
