@@ -1,7 +1,9 @@
 # chauncey
 
 [![NPM version](https://badge.fury.io/js/chauncey.svg)](http://badge.fury.io/js/chauncey)
+[![Build Status](https://travis-ci.org/tanem/chauncey.png?branch=master)](https://travis-ci.org/tanem/chauncey)
 [![Dependency status](https://david-dm.org/tanem/chauncey.svg)](https://david-dm.org/tanem/chauncey)
+[![devDependency Status](https://david-dm.org/tanem/chauncey/dev-status.svg)](https://david-dm.org/tanem/chauncey#info=devDependencies)
 
 Shorten URLs with [Bitly](https://bitly.com/).
 
@@ -52,6 +54,12 @@ So on OS X, you can do stuff like:
 
 ```
 $ chauncey http://google.com/ | pbcopy
+```
+
+## Tests
+
+```
+$ npm test
 ```
 
 ## Note
