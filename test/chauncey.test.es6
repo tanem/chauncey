@@ -101,6 +101,7 @@ test('error if issue with request', (t) => {
 
   chauncey({
     url: originalUrl,
+    token: '123abc',
     done: (error, result) => {
       t.equal(error.message, 'boom');
       t.equal(result, undefined);
