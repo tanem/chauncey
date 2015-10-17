@@ -60,15 +60,12 @@ $ chauncey http://google.com/ | pbcopy
 
 ### chauncey(url, [token], [done])
 
-Applies `iterator` to each item in `arr`, concatenating the results. Returns the
-concatenated list. The `iterator`s are called in parallel, and the results are
-concatenated as they return. There is no guarantee that the results array will
-be returned in the original order of `arr` passed to the `iterator` function.
+Shortens `url` using the Bitly API.
 
 __Arguments__
 
 * `url` - The URL to shorten.
-* `token` - *Optional* Bitly access token. Will take precedence over `BITLY_ACCESS_TOKEN` defined in the user environment. See [configuration](#configuration).
+* `token` - *Optional* Bitly access token. Will take precedence over `BITLY_ACCESS_TOKEN` defined in the user environment (see [configuration](#configuration)).
 * `done(error, result)` - *Optional* A callback which is called with the shortened URL, or an error.
 
 __Example__
