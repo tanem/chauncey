@@ -8,7 +8,9 @@ import chauncey from '..';
 const argv = minimist(process.argv.slice(2));
 
 if (argv.h || argv.help) {
-  console.log (fs.readFileSync(path.join(__dirname, 'usage.txt'), { encoding: 'utf8' }));
+  console.log(
+    fs.readFileSync(path.join(__dirname, 'usage.txt'), { encoding: 'utf8' })
+  );
   process.exit(1);
 }
 
