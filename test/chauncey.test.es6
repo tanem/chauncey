@@ -93,11 +93,8 @@ test('error if token not found', (t) => {
 });
 
 test('error if issue with request', (t) => {
-  const getStub = sinon.stub(https, 'get').returns({
-    on(event, callback) {
-      callback(new Error('boom'));
-    }
-  });
+  const emitter = new EventEmitter();
+  const getStub = sinon.stub(https, 'get').returns(emitter);
 
   chauncey({
     url: originalUrl,
@@ -109,4 +106,7 @@ test('error if issue with request', (t) => {
       getStub.reset();
     }
   });
+
+  process.nextTick(() => emitter.emit('error', new Error('boom')));
+
 });

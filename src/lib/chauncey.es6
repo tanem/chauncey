@@ -13,11 +13,9 @@ export default ({ url, token, done = () => {} }) => {
 
   https.get(
     `https://api-ssl.bitly.com/v3/shorten?access_token=${token}&longUrl=${url}&format=txt`,
-    (res) => {
-      res.pipe(concat({ encoding: 'string' }, (res) => {
-        done(null, res);
-      }));
-    }
+    (res) => res.pipe(
+      concat({ encoding: 'string' }, (res) => done(null, res))
+    )
   ).on('error', done);
 
 };
