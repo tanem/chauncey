@@ -43,6 +43,8 @@ export BITLY_ACCESS_TOKEN=123abc
 
 ## Usage
 
+### CLI
+
 Chauncey will output the shortened URL to `stdout`:
 
 ```
@@ -56,9 +58,9 @@ So on OS X, you can do stuff like:
 $ chauncey http://google.com/ | pbcopy
 ```
 
-## API
+### API
 
-### chauncey(url, [token], [done])
+#### chauncey(url, [token], [done])
 
 Shortens `url` using the Bitly API.
 
