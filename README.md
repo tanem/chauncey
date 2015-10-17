@@ -32,13 +32,13 @@ $ npm i -g chauncey
 First you need a [Bitly developer access token](http://dev.bitly.com/authentication.html). You can either pass this token directly via the [API](#api), or add it to your user environment so chauncey can pick it up automatically. For example:
 
 ```
-$ BITLY_ACCESS_TOKEN=[access token] chauncey http://google.com/
+$ BITLY_ACCESS_TOKEN=123abc chauncey http://google.com/
 ```
 
 You can also use a `.chaunceyrc` file. Chauncey will look for `.chaunceyrc` starting in `process.cwd()`, then `../`, `../../`, all the way up to the filesystem root. It should have the following content:
 
 ```
-export BITLY_ACCESS_TOKEN=[access token]
+export BITLY_ACCESS_TOKEN=123abc
 ```
 
 ## Usage
