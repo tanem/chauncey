@@ -29,7 +29,7 @@ $ npm i -g chauncey
 
 ## Configuration
 
-First you need a [Bitly developer access token](http://dev.bitly.com/authentication.html). Then you'll need to add the token to your user environment, for example:
+First you need a [Bitly developer access token](http://dev.bitly.com/authentication.html). You can either pass this token directly via the [API](#api), or add it to your user environment so chauncey can pick it up automatically. For example:
 
 ```
 $ BITLY_ACCESS_TOKEN=[access token] chauncey http://google.com/
