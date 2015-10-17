@@ -56,6 +56,36 @@ So on OS X, you can do stuff like:
 $ chauncey http://google.com/ | pbcopy
 ```
 
+## API
+
+### chauncey(url, [token], [done])
+
+Applies `iterator` to each item in `arr`, concatenating the results. Returns the
+concatenated list. The `iterator`s are called in parallel, and the results are
+concatenated as they return. There is no guarantee that the results array will
+be returned in the original order of `arr` passed to the `iterator` function.
+
+__Arguments__
+
+* `url` - The URL to shorten.
+* `token` - *Optional* Bitly access token. Will take precedence over `BITLY_ACCESS_TOKEN` defined in the user environment. See [configuration](#configuration).
+* `done(error, result)` - *Optional* A callback which is called with the shortened URL, or an error.
+
+__Example__
+
+```js
+import chauncey from 'chauncey';
+
+chauncey({
+  url: 'http://google.com/',
+  token: '123abc',
+  done: (error, result) => {
+    if (error) return console.error(error.message);
+    console.log(result);
+  }
+});
+```
+
 ## Tests
 
 ```
