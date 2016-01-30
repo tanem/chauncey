@@ -1,9 +1,10 @@
 # chauncey
 
-[![NPM version](https://badge.fury.io/js/chauncey.svg)](http://badge.fury.io/js/chauncey)
-[![Build Status](https://travis-ci.org/tanem/chauncey.png?branch=master)](https://travis-ci.org/tanem/chauncey)
-[![Dependency status](https://david-dm.org/tanem/chauncey.svg)](https://david-dm.org/tanem/chauncey)
-[![devDependency Status](https://david-dm.org/tanem/chauncey/dev-status.svg)](https://david-dm.org/tanem/chauncey#info=devDependencies)
+[![build status](https://img.shields.io/travis/tanem/chauncey/master.svg?style=flat-square)](https://travis-ci.org/tanem/chauncey)
+[![npm version](https://img.shields.io/npm/v/chauncey.svg?style=flat-square)](https://www.npmjs.com/package/chauncey)
+[![npm downloads](https://img.shields.io/npm/dm/chauncey.svg?style=flat-square)](https://www.npmjs.com/package/chauncey)
+[![Dependency status](https://david-dm.org/tanem/chauncey.svg?style=flat-square)](https://david-dm.org/tanem/chauncey)
+[![devDependency Status](https://david-dm.org/tanem/chauncey/dev-status.svg?style=flat-square)](https://david-dm.org/tanem/chauncey#info=devDependencies)
 
 Shorten URLs with [Bitly](https://bitly.com/).
 
